@@ -1,18 +1,14 @@
 import { Form, Input } from 'formfusion';
 import './App.css';
-import { useState } from 'react';
 
 function App() {
-  const [successMessage, setSuccessMessage] = useState('');
+
   const handleSubmit = (data) => {
-    setSuccessMessage(`Welcome ${data.firstName}`);
+    console.log(data);
   };
 
   return (
-    <Form onSubmit={handleSubmit} validateOnChange className="form">
-      <div role="region" id="success-message" aria-live="polite" className="form__successMessage">
-        {successMessage}
-      </div>
+    <Form onSubmit={handleSubmit}>
       <fieldset>
         <legend>Personal Information</legend>
         <Input
@@ -51,11 +47,11 @@ function App() {
           type="alphabetic"
           id="city"
           name="city"
-          label="City"
+          label="city"
           classes={{ root: 'formControl', error: 'formControl__error' }}
         />
       </fieldset>
-      <button type="submit" aria-controls="success-message">Save</button>
+      <button type="submit">Save</button>
     </Form>
   );
 }
