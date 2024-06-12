@@ -41,3 +41,8 @@ legend {
   font-size: small;
   color: #707070;
 }
+
+.form__successMessage {
+  color: green;
+  margin-bottom: 1em;
+}
