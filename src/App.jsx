@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <Form validateOnChange>
+    <Form validateOnChange className="form">
       <fieldset>
         <legend>Personal Information</legend>
         <Input
@@ -42,7 +42,7 @@ function App() {
           type="alphabetic"
           id="city"
           name="city"
-          label="city"
+          label="City"
           classes={{ root: 'formControl', error: 'formControl__error' }}
         />
       </fieldset>

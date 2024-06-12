@@ -4,10 +4,15 @@
   padding: 2rem;
 }
 
-form,
-fieldset {
-  width: 600px;
-  display: inline-block;
+button {
+  margin: 2em auto;
+  display: flex;
+  padding: 0.8em 2.5em;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .formControl {
@@ -21,6 +26,18 @@ fieldset {
   font-size: small;
 }
 
-button {
-  margin-top: 2em;
+.form,
+fieldset {
+  display: block;
+}
+
+fieldset {
+  border: 1px solid #cccccc;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+legend {
+  font-size: small;
+  color: #707070;
 }
